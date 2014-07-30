@@ -1,0 +1,8 @@
+{
+  "name": "angular-node-express",
+  "description": "Ejemplo simple de interacción entre Angular.js y Node.js utilizando Express como servidor.",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "latest"
+  }
+}

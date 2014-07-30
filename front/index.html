@@ -23,10 +23,11 @@
     <script src="js/angular.min.js"></script>
     <script>
       function GetData($scope, $http){
-        $http({method: 'POST', url: 'http://localhost:5001/getData'})
+        var serverUrl = 'http://localhost:5001/getData';
+        
+        $http({method: 'POST', url: serverUrl})
           .success(function(data){
             $scope.profesores = data; // respuesta del servidor
-            console.log(data);
           });
       }
     </script>
@@ -45,7 +46,7 @@
           <td>{{profe.curso}}</td>
         </tr>
       </table>
-      
+
     </div>
   </body>
 </html>
