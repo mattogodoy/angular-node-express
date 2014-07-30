@@ -1,0 +1,51 @@
+<!doctype html>
+<html ng-app id="ng-app">
+
+  <head>
+    <title>Taller de Node.js</title>
+
+    <!-- Estilos -->
+    <style>
+      table,th,td{
+        border:1px solid black;
+        border-collapse:collapse;
+        font-family: Verdana, Arial;
+      }
+      th,td{
+        padding: 0 10px 0 10px;
+      }
+      th{
+        background-color: #00BF59;
+      }
+    </style>
+
+    <!-- Scripts -->
+    <script src="js/angular.min.js"></script>
+    <script>
+      function GetData($scope, $http){
+        $http({method: 'POST', url: 'http://localhost:5001/getData'})
+          .success(function(data){
+            $scope.profesores = data; // respuesta del servidor
+            console.log(data);
+          });
+      }
+    </script>
+  </head>
+
+  <body>
+    <div ng-controller="GetData">
+
+      <table>
+        <tr>
+          <th><b>Nombre</b></th>
+          <th><b>Curso</b></th>
+        </tr>
+        <tr ng-repeat="profe in profesores" >
+          <td>{{profe.nombre}}</td>
+          <td>{{profe.curso}}</td>
+        </tr>
+      </table>
+      
+    </div>
+  </body>
+</html>
