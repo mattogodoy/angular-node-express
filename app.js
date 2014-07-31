@@ -8,6 +8,9 @@ app.all('/*', function(req, res, next) {
   next();
 });
 
+// Establezco el Base Path
+app.use(express.static(__dirname + '/public'));
+
 app.get("/", function(req, res) {
   res.sendfile('index.html');
 });

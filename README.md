@@ -2,16 +2,22 @@
 
 ## Ejemplo simple de interacción entre Angular.js y Node.js utilizando Express como servidor.
 
+
+
 ### Instalación:
-- Dentro del directorio "back" ejecutar: 
+- Dentro del directorio del proyecto ejecutar: 
 ```
 sudo npm install
 ```
 
-### Utilización:
-- Dentro del directorio **back** ejecutar:
+- Una vez finalizada la instalacion de paquetes, iniciar el servidor:
 ```
 node app.js
 ```
 
-- Abrir en un navegador el archivo **index.hmtl** que se encuentra en el directorio **front**
+
+### Utilización:
+- En un navegador web, ir a la URL del servidor:
+```
+http://localhost:5001/
+```
