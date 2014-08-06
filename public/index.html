@@ -21,16 +21,7 @@
 
     <!-- Scripts -->
     <script src="js/angular.min.js"></script>
-    <script>
-      function GetData($scope, $http){
-        var serverUrl = 'http://localhost:5001/getData';
-        
-        $http({method: 'POST', url: serverUrl})
-          .success(function(data){
-            $scope.profesores = data; // respuesta del servidor
-          });
-      }
-    </script>
+    <script src="js/app.js"></script>
   </head>
 
   <body>

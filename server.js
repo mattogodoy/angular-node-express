@@ -32,6 +32,10 @@ app.post("/getData", function(req, res) {
     {
       nombre: "Matias",
       curso: "Node JS"
+    },
+    {
+      nombre: "asdf",
+      curso: "asfd"
     }
   ];
 
