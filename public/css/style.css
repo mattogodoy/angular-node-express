@@ -1,0 +1,11 @@
+table,th,td{
+  border:1px solid black;
+  border-collapse:collapse;
+  font-family: Verdana, Arial;
+}
+th,td{
+  padding: 0 10px 0 10px;
+}
+th{
+  background-color: #00BF59;
+}
