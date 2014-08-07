@@ -12,7 +12,7 @@ sudo npm install
 
 - Una vez finalizada la instalacion de paquetes, iniciar el servidor:
 ```
-node app.js
+node server.js
 ```
 
 
